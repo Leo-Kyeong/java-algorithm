@@ -23,16 +23,19 @@ public class Complex0304 {
             arr[i] = Integer.parseInt(st1.nextToken());
         }
 
-        int result = 0;
-        int sum = 0; // lt ~ rt (부분수열합)
-        int lt = 0;
+        int result = 0; // 경우의 수
+        int sum = 0; // arr[lt] ~ arr[rt] (부분수열합)
+        int lt = 0; // 포인터 lt
 
-        for(int rt = 0; rt < n; rt++){ // rt 0 ~ n까지
-            sum += arr[rt]; // sum 에 arr[rt] 값 증가
+        for(int rt = 0; rt < n; rt++){ // 포인터 rt를 0 ~ n까지 이동
+            // 포인터 rt를 이동하면서 sum 의 값이 M의 값보다 같거나 클 때까지 증가 연산
+            sum += arr[rt];
             if(sum == m){ // sum 이 특정숫자(m)가 되었는지 확인
                 result++;
             }
-            while (sum >= m){ // sum 이 특정숫자(m)보다 크거나 같으면 반복
+            while (sum >= m){
+                // sum 이 특정숫자(M)보다 같거나 크면
+                // M의 값보다 작아질 때까지 포인터 lt를 이동 시켜 주며 해당 요소들을 감산
                 sum -= arr[lt];
                 lt++;
                 if(sum == m){
