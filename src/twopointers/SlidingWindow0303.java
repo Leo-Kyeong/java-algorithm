@@ -26,11 +26,11 @@ public class SlidingWindow0303 {
         int result;
         int sum = 0;
 
-        for(int i = 0; i < k; i++){
+        for(int i = 0; i < k; i++){ // sum 값을 첫 번째 슬라이딩 윈도우 값으로 초기화
             sum += arr[i];
         }
 
-        result = sum;
+        result = sum; // 출력 값 초기화
 
         for(int i = k; i < n; i++){
             sum = sum + arr[i] - arr[i - k];
