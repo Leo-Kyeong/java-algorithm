@@ -23,15 +23,28 @@ public class TreeSet0405 {
             arr[i] = Integer.parseInt(sequence.nextToken());
         }
 
-        Comparator<Integer> comparator = Comparator.reverseOrder();
-        Map<Integer, Integer> map = new TreeMap<>(comparator);
+        int result = -1;
 
-        for(int i = 0; i < arr.length; i++){
-            map.put(arr[i], map.getOrDefault(arr[i], 0)+1);
-        }
+        Set<Integer> Tset = new TreeSet<>(Collections.reverseOrder());
 
-        for (Integer integer : map.keySet()) {
-            System.out.println(integer+" "+map.get(integer));
+        for(int i = 0; i < n; i++){
+            for(int j = i + 1; j < n; j++ ){
+                for(int l = j + 1; l < n; l++){
+                    Tset.add(arr[i] + arr[j] + arr[l]);
+                }
+            }
         }
+        // Tset.remove(143); 요소 삭제
+        // Tset.size(); 원소의 개수(길이)
+
+        int cnt = 0;
+        for (Integer x : Tset) {
+            System.out.println(x);
+            cnt++;
+            if(cnt == k){ // k번째 요소 출력
+                result = x;
+            }
+        }
+        System.out.println(result);
     }
 }
