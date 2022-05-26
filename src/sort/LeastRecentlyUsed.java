@@ -44,8 +44,8 @@ public class LeastRecentlyUsed {
                 cache[0] = x;
             }
         }
-        for (int i : cache) {
-            System.out.print(i + " ");
+        for (int c : cache) {
+            System.out.print(c + " ");
         }
     }
 }
