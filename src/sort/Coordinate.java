@@ -15,12 +15,10 @@ public class Coordinate {
 
         int n = Integer.parseInt(br.readLine());
 
-        StringTokenizer st = null;
-
         List<Point> list = new ArrayList<>();
 
         for(int i = 0; i < n; i++){
-            st = new StringTokenizer(br.readLine(), " ");
+            StringTokenizer st = new StringTokenizer(br.readLine(), " ");
 
             int x = Integer.parseInt(st.nextToken());
             int y = Integer.parseInt(st.nextToken());
