@@ -26,8 +26,8 @@ public class Coordinate {
             list.add(new Point(x, y));
         }
 
-        // Comparable Interface 를 통해서 Point 객체를 정렬하는데
-        // 직접 구현한 compareTo Method 를 기준으로 정렬된다.
+        // Comparable Interface 를 통해서 Point 객체를 정렬
+        // 직접 구현한 compareTo Method 가 있담뎐 해당 메소드를 기준으로 정렬
         Collections.sort(list);
 
         for (Point point : list) {
