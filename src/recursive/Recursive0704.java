@@ -6,31 +6,22 @@ import java.io.InputStreamReader;
 
 public class Recursive0704 {
 
-    public static int cnt = 2;
-
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         int n = Integer.parseInt(br.readLine());
 
-        int arr[] = new int[n];
-
-        arr[0] = 1;
-        arr[1] = 1;
-
-        recursive(n, arr);
-
-        for (int i : arr) {
-            System.out.print(i + " ");
+        for(int i = 1; i <= n; i++){
+            System.out.print(recursive(i) + " ");
         }
     }
 
-    public static void recursive(int n, int[] arr) {
-        if(cnt == n){
-            return;
+    public static int recursive(int n) {
+        if(n == 1){
+            return 1;
+        }else if(n == 2) {
+            return 1;
         }
-        arr[cnt] = arr[cnt-2] + arr[cnt-1];
-        cnt++;
-        recursive(n, arr);
+        return recursive(n-2) + recursive(n-1);
     }
 }
