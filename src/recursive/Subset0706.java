@@ -31,6 +31,8 @@ public class Subset0706 {
 
         ch = new int[n+1];
 
-        recursive(1);
+        int startLevel = 1;
+
+        recursive(startLevel);
     }
 }
