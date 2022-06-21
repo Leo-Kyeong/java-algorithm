@@ -1,6 +1,6 @@
 package recursive;
 
-public class Tree0705 {
+public class TreeDfs0705 {
 
     public static void DFS (Node root) {
         if(root == null) return;
