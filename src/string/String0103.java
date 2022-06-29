@@ -5,6 +5,9 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
+/**
+ * 문장 속 단어
+ */
 public class String0103 {
 
     public static void main(String[] args) throws IOException {

@@ -7,6 +7,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+/**
+ * 문자열 압축
+ */
 public class String0111 {
 
     public static void main(String[] args) throws IOException {

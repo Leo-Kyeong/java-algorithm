@@ -5,6 +5,9 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
+/**
+ * 가장 짧은 문자거리
+ */
 public class String0110 {
 
     public static void main(String[] args) throws IOException {
@@ -19,7 +22,7 @@ public class String0110 {
 
         int p = 1000;
 
-        for(int i = 0; i < s.length; i++){ // 왼쪽 t와의 거리 계산
+        for(int i = 0; i < s.length; i++){ // 왼쪽 문자 t와의 거리 계산
             if(s[i].equals(t)){
                 p = 0;
                 result[i] = p;
@@ -31,7 +34,7 @@ public class String0110 {
 
         p = 1000;
 
-        for(int i = s.length - 1; i >= 0; i--){ // 오른쪽 t와의 거리 개산
+        for(int i = s.length - 1; i >= 0; i--){ // 오른쪽 문자 t와의 거리 개산
             if(s[i].equals(t)){
                 p = 0;
             }else {

@@ -4,6 +4,9 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+/**
+ * 회문 문자열
+ */
 public class String0107 {
 
     public static void main(String[] args) throws IOException {

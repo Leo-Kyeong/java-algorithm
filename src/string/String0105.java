@@ -4,6 +4,9 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+/**
+ * 특정 문자 뒤집기
+ */
 public class String0105 {
 
     public static void main(String[] args) throws IOException {
@@ -20,9 +23,9 @@ public class String0105 {
         while (lt < rt){
              if(!Character.isAlphabetic(chars[lt])){ // 알파벳이 아닐 때(특수문자)
                 lt++;
-             }else if(!Character.isAlphabetic(chars[rt])){
+             }else if(!Character.isAlphabetic(chars[rt])){ // 알파벳이 아닐 때(특수문자)
                 rt--;
-             }else {
+             }else { // 알파벳일 때(뒤집기)
                 char temp = chars[lt];
                 chars[lt] = chars[rt];
                 chars[rt] = temp;

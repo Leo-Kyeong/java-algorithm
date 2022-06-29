@@ -4,6 +4,9 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+/**
+ * 단어 뒤집기
+ */
 public class String0104 {
 
     public static void main(String[] args) throws IOException {
