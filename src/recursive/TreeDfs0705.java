@@ -5,9 +5,9 @@ public class TreeDfs0705 {
     public static void DFS (Node root) {
         if(root == null) return;
         else {
-            // System.out.print(root.data + " "); // 전위 순회
+            System.out.print(root.data + " "); // 전위 순회
             DFS(root.lt);
-            System.out.print(root.data + " "); // 중위 순회
+            // System.out.print(root.data + " "); // 중위 순회
             DFS(root.rt);
             // System.out.print(root.data + " "); // 후위 순회
         }

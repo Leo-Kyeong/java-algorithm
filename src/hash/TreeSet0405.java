@@ -39,7 +39,7 @@ public class TreeSet0405 {
 
         int cnt = 0;
         for (Integer x : Tset) {
-            System.out.println(x);
+            // System.out.println(x);
             cnt++;
             if(cnt == k){ // k번째 요소 출력
                 result = x;
