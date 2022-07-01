@@ -7,7 +7,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class TreeBfs0708 {
+public class TreeBFS0708 {
 
     public static int BFS (int s, int e) {
         int level = 0; // 레벨

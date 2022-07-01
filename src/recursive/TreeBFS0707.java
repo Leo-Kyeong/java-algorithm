@@ -3,7 +3,7 @@ package recursive;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class TreeBfs0707 {
+public class TreeBFS0707 {
 
     public static void BFS (Node root) {
         StringBuilder sb = new StringBuilder();
