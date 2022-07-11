@@ -5,7 +5,10 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class GraphDFS0712 {
+/**
+ * 인접행렬 이용
+ */
+public class GraphProcession0712 {
 
     // 1번 정점에서 n번 정점으로 가는 모든 경로의 가지 수(result)를 출력
     private static int n, m, result = 0;
@@ -46,7 +49,7 @@ public class GraphDFS0712 {
             graph[a][b] = 1;
         }
         check[1] = 1; // 1번 방문 노드 체크
-        DFS(1);
+        DFS(1); // 1번 노드부터 출발
         System.out.println(result);
     }
 }
