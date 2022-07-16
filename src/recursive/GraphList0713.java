@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.StringTokenizer;
 
 /**
@@ -13,7 +14,7 @@ public class GraphList0713 {
 
     // 1번 정점에서 n번 정점으로 가는 모든 경로의 가지 수(result)를 출력
     private static int n, m, result = 0;
-    private static ArrayList<ArrayList<Integer>> graph;
+    private static List<ArrayList<Integer>> graph;
     private static int[] check;
 
     public static void DFS(int v) {
@@ -40,12 +41,14 @@ public class GraphList0713 {
 
         graph = new ArrayList<ArrayList<Integer>>();
 
-        for (int i = 0; i <= n; i++){ // 정점의 수 + 1 만큼 ArrayList<Integer> 생성, 0번 인덱스 사용 X
+        // 정점의 수 + 1 만큼 ArrayList<Integer> 생성, 0번 인덱스 사용 X
+        for (int i = 0; i <= n; i++){
             graph.add(new ArrayList<Integer>());
         }
 
         check = new int[n+1];
 
+        // 간선 정보에 따라 리스트의 요소를 추가
         for(int i = 0; i < m; i++) {
             StringTokenizer st2 = new StringTokenizer(br.readLine(), " ");
             int a = Integer.parseInt(st2.nextToken());
