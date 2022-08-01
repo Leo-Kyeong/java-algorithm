@@ -41,6 +41,7 @@ public class Graph0714 {
         int m = Integer.parseInt(st.nextToken()); // 간선의 수 : 9
 
         graph = new ArrayList<ArrayList<Integer>>();
+
         for(int i = 0; i <= n; i++){
             graph.add(new ArrayList<Integer>());
         }
