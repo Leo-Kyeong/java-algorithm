@@ -5,6 +5,9 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
+/**
+ * 합이 같은 합집합
+ */
 public class Dfs0801 {
 
     private static String result = "NO";
