@@ -12,7 +12,7 @@ public class Dfs0801 {
 
     private static String result = "NO"; // 결과
     private static int n, total = 0; // 원소 갯수, 원소의 총 합
-    private static boolean flag = false; // flag 를 통해 복귀하는 재귀 함수들을 모두 리턴 (성능 최적화)
+    private static boolean flag = false; // flag 를 통해 복귀하는 재귀 함수들을 모두 return (성능 최적화)
 
     private static void DFS(int level, int sum, int[] arr) {
         if(flag) return; // true 일 경우 복귀하는 재귀 함수는 모두 return
