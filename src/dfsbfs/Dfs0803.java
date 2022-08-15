@@ -25,7 +25,7 @@ public class Dfs0803 {
 
         StringTokenizer st = new StringTokenizer(br.readLine(), " ");
 
-        n = Integer.parseInt(st.nextToken()); // 문재의 개수
+        n = Integer.parseInt(st.nextToken()); // 문제의 개수
         m = Integer.parseInt(st.nextToken()); // 제한 시간
 
         int[] ps = new int[n]; // 문제를 풀었을 때의 점수
